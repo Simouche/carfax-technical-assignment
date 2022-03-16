@@ -1,0 +1,676 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "031bb2d52fab1054d6554f4b5f25cab7",
+    "entities": [
+      {
+        "tableName": "Listing",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `advantage` INTEGER, `atomOtherOptions` TEXT, `atomTopOptions` TEXT, `backfill` INTEGER, `badge` TEXT, `bedLength` TEXT, `bodytype` TEXT, `cabType` TEXT, `certified` INTEGER, `currentPrice` INTEGER, `dealerType` TEXT, `displacement` TEXT, `distanceToDealer` REAL, `drivetype` TEXT, `engine` TEXT, `exteriorColor` TEXT, `firstSeen` TEXT, `followCount` INTEGER, `followedAt` INTEGER, `following` INTEGER, `fuel` TEXT, `hasViewed` INTEGER, `imageCount` INTEGER, `interiorColor` TEXT, `isEnriched` INTEGER, `isOemPromoted` INTEGER, `isOemRefundFlag` INTEGER, `listPrice` INTEGER, `make` TEXT, `mileage` INTEGER, `model` TEXT, `mpgCity` INTEGER, `mpgHighway` INTEGER, `noAccidents` INTEGER, `oneOwner` INTEGER, `onePrice` INTEGER, `onlineOnly` INTEGER, `personalUse` INTEGER, `placed` INTEGER, `recordType` TEXT, `sentLead` INTEGER, `serviceRecords` INTEGER, `sortScore` REAL, `stockNumber` TEXT, `subTrim` TEXT, `topOptions` TEXT, `tpCostPerVdp` REAL, `tpEligible` INTEGER, `transmission` TEXT, `trim` TEXT, `vdpUrl` TEXT, `vehicleCondition` TEXT, `vin` TEXT, `windowSticker` TEXT, `year` INTEGER, `ah_accidentSummary` TEXT, `ah_icon` TEXT, `ah_iconUrl` TEXT, `ah_text` TEXT, `address` TEXT, `d_backfill` INTEGER, `d_carfaxId` TEXT, `d_cfxMicrositeUrl` TEXT, `d_city` TEXT, `d_dealerAverageRating` REAL, `d_dealerInventoryUrl` TEXT, `d_dealerLeadType` TEXT, `d_dealerReviewComments` TEXT, `d_dealerReviewCount` INTEGER, `d_dealerReviewDate` TEXT, `d_dealerReviewRating` INTEGER, `d_dealerReviewReviewer` TEXT, `d_dealerReviewTitle` TEXT, `d_latitude` REAL, `d_longitude` REAL, `d_name` TEXT, `d_onlineOnly` INTEGER, `d_phone` TEXT, `d_state` TEXT, `d_zip` TEXT, `baseUrl` TEXT, `Large_Image` TEXT, `Medium_Image` TEXT, `Small_Image` TEXT, `large` TEXT, `medium` TEXT, `small` TEXT, `downPaymentAmount` REAL, `downPaymentPercent` INTEGER, `interestRate` INTEGER, `loanAmount` REAL, `monthlyPayment` REAL, `price` INTEGER, `termInMonths` INTEGER, `oh_history` TEXT, `oh_icon` TEXT, `oh_iconUrl` TEXT, `oh_text` TEXT, `sh_history` TEXT, `sh_icon` TEXT, `sh_iconUrl` TEXT, `sh_number` INTEGER, `sh_text` TEXT, `vh_history` TEXT, `vh_icon` TEXT, `vh_iconUrl` TEXT, `vh_text` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "advantage",
+            "columnName": "advantage",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "atomOtherOptions",
+            "columnName": "atomOtherOptions",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "atomTopOptions",
+            "columnName": "atomTopOptions",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backfill",
+            "columnName": "backfill",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "badge",
+            "columnName": "badge",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bedLength",
+            "columnName": "bedLength",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bodytype",
+            "columnName": "bodytype",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cabType",
+            "columnName": "cabType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "certified",
+            "columnName": "certified",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentPrice",
+            "columnName": "currentPrice",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealerType",
+            "columnName": "dealerType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "displacement",
+            "columnName": "displacement",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "distanceToDealer",
+            "columnName": "distanceToDealer",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "drivetype",
+            "columnName": "drivetype",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "engine",
+            "columnName": "engine",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "exteriorColor",
+            "columnName": "exteriorColor",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstSeen",
+            "columnName": "firstSeen",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "followCount",
+            "columnName": "followCount",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "followedAt",
+            "columnName": "followedAt",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "following",
+            "columnName": "following",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fuel",
+            "columnName": "fuel",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hasViewed",
+            "columnName": "hasViewed",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imageCount",
+            "columnName": "imageCount",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "interiorColor",
+            "columnName": "interiorColor",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isEnriched",
+            "columnName": "isEnriched",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isOemPromoted",
+            "columnName": "isOemPromoted",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isOemRefundFlag",
+            "columnName": "isOemRefundFlag",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "listPrice",
+            "columnName": "listPrice",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "make",
+            "columnName": "make",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mileage",
+            "columnName": "mileage",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mpgCity",
+            "columnName": "mpgCity",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mpgHighway",
+            "columnName": "mpgHighway",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "noAccidents",
+            "columnName": "noAccidents",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "oneOwner",
+            "columnName": "oneOwner",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "onePrice",
+            "columnName": "onePrice",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "onlineOnly",
+            "columnName": "onlineOnly",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "personalUse",
+            "columnName": "personalUse",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "placed",
+            "columnName": "placed",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "recordType",
+            "columnName": "recordType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sentLead",
+            "columnName": "sentLead",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceRecords",
+            "columnName": "serviceRecords",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sortScore",
+            "columnName": "sortScore",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stockNumber",
+            "columnName": "stockNumber",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "subTrim",
+            "columnName": "subTrim",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "topOptions",
+            "columnName": "topOptions",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tpCostPerVdp",
+            "columnName": "tpCostPerVdp",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tpEligible",
+            "columnName": "tpEligible",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "transmission",
+            "columnName": "transmission",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "trim",
+            "columnName": "trim",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vdpUrl",
+            "columnName": "vdpUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vehicleCondition",
+            "columnName": "vehicleCondition",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vin",
+            "columnName": "vin",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "windowSticker",
+            "columnName": "windowSticker",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "year",
+            "columnName": "year",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "accidentHistory.accidentSummary",
+            "columnName": "ah_accidentSummary",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "accidentHistory.icon",
+            "columnName": "ah_icon",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "accidentHistory.iconUrl",
+            "columnName": "ah_iconUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "accidentHistory.text",
+            "columnName": "ah_text",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.backfill",
+            "columnName": "d_backfill",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.carfaxId",
+            "columnName": "d_carfaxId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.cfxMicrositeUrl",
+            "columnName": "d_cfxMicrositeUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.city",
+            "columnName": "d_city",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerAverageRating",
+            "columnName": "d_dealerAverageRating",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerInventoryUrl",
+            "columnName": "d_dealerInventoryUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerLeadType",
+            "columnName": "d_dealerLeadType",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerReviewComments",
+            "columnName": "d_dealerReviewComments",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerReviewCount",
+            "columnName": "d_dealerReviewCount",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerReviewDate",
+            "columnName": "d_dealerReviewDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerReviewRating",
+            "columnName": "d_dealerReviewRating",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerReviewReviewer",
+            "columnName": "d_dealerReviewReviewer",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.dealerReviewTitle",
+            "columnName": "d_dealerReviewTitle",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.latitude",
+            "columnName": "d_latitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.longitude",
+            "columnName": "d_longitude",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.name",
+            "columnName": "d_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.onlineOnly",
+            "columnName": "d_onlineOnly",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.phone",
+            "columnName": "d_phone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.state",
+            "columnName": "d_state",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dealer.zip",
+            "columnName": "d_zip",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.baseUrl",
+            "columnName": "baseUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.large",
+            "columnName": "Large_Image",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.medium",
+            "columnName": "Medium_Image",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.small",
+            "columnName": "Small_Image",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.firstPhoto.large",
+            "columnName": "large",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.firstPhoto.medium",
+            "columnName": "medium",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "images.firstPhoto.small",
+            "columnName": "small",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.downPaymentAmount",
+            "columnName": "downPaymentAmount",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.downPaymentPercent",
+            "columnName": "downPaymentPercent",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.interestRate",
+            "columnName": "interestRate",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.loanAmount",
+            "columnName": "loanAmount",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.monthlyPayment",
+            "columnName": "monthlyPayment",
+            "affinity": "REAL",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.price",
+            "columnName": "price",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "monthlyPaymentEstimate.termInMonths",
+            "columnName": "termInMonths",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ownerHistory.history",
+            "columnName": "oh_history",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ownerHistory.icon",
+            "columnName": "oh_icon",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ownerHistory.iconUrl",
+            "columnName": "oh_iconUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ownerHistory.text",
+            "columnName": "oh_text",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceHistory.history",
+            "columnName": "sh_history",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceHistory.icon",
+            "columnName": "sh_icon",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceHistory.iconUrl",
+            "columnName": "sh_iconUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceHistory.number",
+            "columnName": "sh_number",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceHistory.text",
+            "columnName": "sh_text",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vehicleUseHistory.history",
+            "columnName": "vh_history",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vehicleUseHistory.icon",
+            "columnName": "vh_icon",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vehicleUseHistory.iconUrl",
+            "columnName": "vh_iconUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vehicleUseHistory.text",
+            "columnName": "vh_text",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '031bb2d52fab1054d6554f4b5f25cab7')"
+    ]
+  }
+}

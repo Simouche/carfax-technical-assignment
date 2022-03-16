@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/pc/Desktop/WorkShop/Android/CarfaxTechnicalAssignment/app/src/main/res/drawable/layout_divider.xml" value="0.3345" />
+        <entry key="..\:/Users/pc/Desktop/WorkShop/Android/CarfaxTechnicalAssignment/app/src/main/res/layout/activity_main.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/pc/Desktop/WorkShop/Android/CarfaxTechnicalAssignment/app/src/main/res/layout/cars_item.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/pc/Desktop/WorkShop/Android/CarfaxTechnicalAssignment/app/src/main/res/layout/fragment_car_details.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/pc/Desktop/WorkShop/Android/CarfaxTechnicalAssignment/app/src/main/res/layout/fragment_cars_list_list.xml" value="0.3489583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

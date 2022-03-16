@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Carfax Technical Assignment</string>
+    <string name="car_image">car_image</string>
+    <string name="call_dealer">Call Dealer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
