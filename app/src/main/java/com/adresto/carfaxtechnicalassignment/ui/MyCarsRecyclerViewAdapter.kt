@@ -1,5 +1,6 @@
 package com.adresto.carfaxtechnicalassignment.ui
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
@@ -9,21 +10,15 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.adresto.carfaxtechnicalassignment.databinding.CarsItemBinding
 import com.adresto.carfaxtechnicalassignment.model.Listing
-import com.adresto.carfaxtechnicalassignment.ui.placeholder.PlaceholderContent.PlaceholderItem
 import com.squareup.picasso.Picasso
 
 
-/**
- * [RecyclerView.Adapter] that can display a [PlaceholderItem].
- * TODO: Replace the implementation with code for your data type.
- */
 class MyCarsRecyclerViewAdapter(
     var values: List<Listing>,
-    val itemClickCallback: (Listing) -> Unit,
+    private val itemClickCallback: (Listing) -> Unit,
 ) : RecyclerView.Adapter<MyCarsRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -38,6 +33,7 @@ class MyCarsRecyclerViewAdapter(
 
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = values[position]
 

@@ -30,6 +30,7 @@ object RetrofitClient {
             .cache(cache)
             .readTimeout(30, TimeUnit.SECONDS)
             .connectTimeout(10, TimeUnit.SECONDS)
+            .retryOnConnectionFailure(true)
         if (BuildConfig.DEBUG)
             client.addInterceptor(interceptor = logger)
         return client.build()

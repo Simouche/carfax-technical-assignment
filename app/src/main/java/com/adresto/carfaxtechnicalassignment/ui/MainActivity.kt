@@ -22,10 +22,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         permissionCheck()
-        supportFragmentManager
-            .beginTransaction()
-            .add(R.id.fragment_container_view, CarsListFragment(),"cars-list")
-            .commit()
+        supportFragmentManager.commit {
+            add(R.id.fragment_container_view, CarsListFragment(),"cars-list")
+        }
     }
 
     private fun permissionCheck() {

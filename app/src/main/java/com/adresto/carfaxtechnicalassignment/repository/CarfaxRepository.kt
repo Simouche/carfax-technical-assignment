@@ -1,6 +1,5 @@
 package com.adresto.carfaxtechnicalassignment.repository
 
-import android.util.Log
 import com.adresto.carfaxtechnicalassignment.api.service.ListingService
 import com.adresto.carfaxtechnicalassignment.db.dao.ListingDao
 import com.adresto.carfaxtechnicalassignment.model.Listing
@@ -24,10 +23,10 @@ class CarfaxRepository(
         disposables.add(
             listingService
                 .fetchListings()
+                .retry()
                 .subscribeOn(Schedulers.io())
                 .observeOn(Schedulers.io())
-                .doOnSuccess { listingDao.insertListings(it.listings) }
-                .subscribe()
+                .subscribe({ listingDao.insertListings(it.listings) }, { it.printStackTrace() })
         )
     }
 

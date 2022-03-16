@@ -1,21 +1,17 @@
 package com.adresto.carfaxtechnicalassignment.ui
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.viewModels
-import androidx.fragment.app.add
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.adresto.carfaxtechnicalassignment.R
 import com.adresto.carfaxtechnicalassignment.model.Listing
-import com.adresto.carfaxtechnicalassignment.ui.placeholder.PlaceholderContent
 import com.adresto.carfaxtechnicalassignment.utils.ResourceState
 import com.adresto.carfaxtechnicalassignment.viewmodel.CarfaxViewModel
 
@@ -23,10 +19,11 @@ import com.adresto.carfaxtechnicalassignment.viewmodel.CarfaxViewModel
  * A fragment representing a list of Items.
  */
 class CarsListFragment : Fragment() {
-    val TAG = "Test Tag"
+
 
     private val carfaxViewModel: CarfaxViewModel by viewModels(this::requireActivity)
 
+    @SuppressLint("NotifyDataSetChanged")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,6 +45,7 @@ class CarsListFragment : Fragment() {
                             //TODO Show loading effect
                         }
                         ResourceState.SUCCESS -> {
+                            visibility = View.VISIBLE
                             (adapter as MyCarsRecyclerViewAdapter).values = it.data!!
                             (adapter as MyCarsRecyclerViewAdapter).notifyDataSetChanged()
                         }
@@ -59,10 +57,11 @@ class CarsListFragment : Fragment() {
     }
 
     private fun navigateToListing(listing: Listing) {
-        parentFragmentManager.beginTransaction()
-            .add(R.id.fragment_container_view, CarDetailsFragment.newInstance(listing))
-            .addToBackStack("cars-list")
-            .commit()
+        parentFragmentManager.commit {
+            setReorderingAllowed(true)
+            add(R.id.fragment_container_view, CarDetailsFragment.newInstance(listing))
+            addToBackStack("cars-list")
+        }
     }
 
 }
